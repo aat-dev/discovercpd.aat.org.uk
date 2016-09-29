@@ -1,0 +1,33 @@
+.competition {
+
+  padding: 60px 0 0 0;
+
+  @extend .container;
+
+  &__contain {
+  @extend .row;
+    text-align: center;
+
+    .competition__col {
+      @extend .col-md-8;
+      @extend .col-md-offset-2;
+
+      h1 {
+        white-space: normal;
+      }
+    }
+  }
+
+  .competition__tc {
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    &__contain {
+      .competition__col {
+        h1 {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
